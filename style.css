@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    font-size: 62.5%;
+}
+
+*, *::after,*::before{
+    box-sizing: inherit;
+    margin:0;
+    padding:0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+/********RESUABLE BUTTON*****/
+.btn2:link,
+.btn2:visited{
+    display: block;
+    width:12rem;
+    margin:1rem auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    color:white;
+    padding:1rem;
+    text-decoration: none;
+    background-color:#86C232;
+    transition: background-color 0.2s,
+    color 0.2s;
+}
+.btn2:hover,.btn2:active{
+    background-color:#ade460;
+}
+/********NAVBAR********/
+header{
+    background-color: #303538;
+    padding:1.5rem 2rem;
+    color:white;
+}  
+.navbar{
+    width:90%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.navbar h1{
+    font-size: 2.5rem;
+} 
+.navbar__main ul{
+    list-style: none;
+}
+.navbar__main--list li{
+    display:inline-block;
+    margin:1rem;
+}
+.navbar__main--list li a:link,
+.navbar__main--list li a:visited{
+    text-decoration: none;
+    color:white;
+    font-size:2rem;
+    border-bottom: 0.2rem solid transparent;
+    transition: border-bottom 0.2s;
+}
+.navbar__main--list li a:active,
+.navbar__main--list li a:hover{
+    border-bottom: 0.2rem solid white;
+}
+/********MAIN********/
+.main{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #222629;
+    height:85vh;
+    flex-direction:column;
+    padding:2.5rem;
+}
+.main__photo--img{
+    width:60vh;
+    height:40vh;
+}
+.main__textBox{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.main__textBox p{
+    font-size: 2.2rem;
+    padding:0.6rem;
+    color:white;
+    font-weight:700;
+    text-align: center;
+}
+.btn:link,
+.btn:visited{
+    display: block;
+    width:12rem;
+    height:5rem;
+    text-align: center;
+    border-radius:20rem;
+    font-size: 2rem;
+    font-style: italic;
+    color:white;
+    padding:0.8rem 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 1px  #d0f0a4 ;
+    background-color:#86C232;
+    transition: background-color 0.2s,
+    color 0.2s;
+}
+.btn:hover,.btn:active{
+    background-color: #ade460;
+}
+/****TECHNOLOGIES******/
+.technology{
+    padding:4.5rem;
+    background-color: white;
+}
+.technology__container{
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+}
+.technology__container h1{
+    font-size:3rem;
+    color:black;
+    margin-bottom:1rem;
+}
+.technology__container p{
+    font-size:2.2rem;
+    color:black;
+}
+
+/*******PROJECTS*******/
+.projects{
+    background-color:#222629;
+    padding:2.5rem;
+}
+.projects h1{
+    font-size: 3rem;
+    color:white;
+    text-align: center;
+}
+.projects--container{
+    margin:0 auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center; 
+    flex-direction: column;  
+}
+.projects--container-box{
+    display:flex;
+    width:80%;
+    padding:1.5rem;
+    margin:1rem;
+    background-color: white;
+    justify-content:space-between;
+    align-items: center;
+}
+.projects--container-box p{
+    font-size: 1.8rem;
+    color:black;
+    margin-top:1rem;
+}
+.view_projects{
+    margin-top:1rem;
+}
+.code{
+    display: flex;
+}
+.code .btn2{
+    margin:0.3rem
+}
+
+/*****BLOGS******/
+.blogs{
+    background-color: white;
+    padding:4.5rem;
+}
+.blogs_main{
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+}
+.blogs_main h1{
+    font-size:2.5rem;
+    color:black;
+    margin-bottom: 1rem;
+}
+.blogs_main p{
+    font-size:2rem;
+    color:black;
+    margin-bottom: 1.5rem;
+}
+/****FOOTER*****/
+footer{
+    padding:4.5rem;
+    background-color:#222629;
+}
+.container2{
+    background-color: white;
+    width:80%;
+    margin:0 auto;
+}
+.container2{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    padding:2rem;
+}
+.container2 h1{
+    font-size:2.5rem;
+}
+.logos {
+    display:flex;
+    justify-content: center;
+}
+.social-icons img{
+    width:4rem;
+    height:4rem;
+    margin:1rem;
+}
+
+a:active , a:hover ,a:link , a:visited {
+    text-decoration:none;
+    color: var(--color900);
+}
+.container2 .attri{
+    font-size: 1.5rem;
+    text-align: center;
+}
+/****RESPONSIVE--NAVBAR*****/
+@media only screen and (max-width: 600px) {
+    .navbar{
+        flex-direction:column;
+    }
+    .main{
+        height:80vh;
+    }
+    .main__photo--img{
+        width:40vh;
+        height:40vh;
+    }
+    .projects--container-box{
+        flex-direction:column;
+    }
+    .code{
+        margin-top:0.3rem;
+    }
+    .code .btn2{
+        width:6rem;
+        height:3rem;
+        padding:0.3rem
+    }
+  }
+  @media only screen and (min-width: 900px){
+    .projects--container-box{
+        width:65%;
+    }
+}
